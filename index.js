@@ -14,7 +14,7 @@ inquirer.prompt([
         message: "Project version (leave empty to skip): "
     },
     {
-        type: "input",
+        type: "editor",
         name: "description",
         message: "Project description: "
     },
@@ -77,20 +77,20 @@ inquirer.prompt([
 .then(answers => {
     // Required variables
     const tableOfContents = `
-        <details>\n
-        <summary>TABLE OF CONTENTS</summary>\n
-        <p>\n\n
+<details>
+<summary>TABLE OF CONTENTS</summary>
+<p>
 
-        - [Installation](#installation)\n
-        - [Usage](#usage)\n
-        - [License](#license)\n
-        - [Contributing](#contributing)\n
-        - [Tests](#tests)\n
-        - [Questions](#questions)\n\n
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-        </p>\n
-        </details>
-        `;
+</p>
+</details>
+`;
     const filename = "README.md";
     const newLine = "\n";
     const newLineBig = "\n\n";
@@ -153,6 +153,16 @@ inquirer.prompt([
         data.push(webBadge);
     }
     data.push(commitBadge);
+    data.push(newLineBig);
+
+    // Input description
+    data.push(`# Description`)
+    data.push(answers.description);
+    data.push(newLineBig);
+
+
+    // Input table of contents
+    data.push(tableOfContents);
     data.push(newLineBig);
 
 

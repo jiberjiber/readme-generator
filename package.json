@@ -1,6 +1,6 @@
 {
   "name": "readme-gen-jib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NodeJS-based markup readme generator.",
   "main": "index.js",
   "scripts": {

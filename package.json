@@ -1,5 +1,5 @@
 {
-  "name": "readme-generator",
+  "name": "readme-gen-jib",
   "version": "1.0.0",
   "description": "A NodeJS-based markup readme generator.",
   "main": "index.js",

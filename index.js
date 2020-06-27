@@ -202,7 +202,7 @@ inquirer.prompt([
 
         case "Do What the Fuck You Want to Public License":
             licenseBadge = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
-            licenseNotice = `\`DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+            licenseNotice = `DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
             Version 2, December 2004 
 
 Copyright (C) 2020 ${answers.authorName} <${answers.email}> 
@@ -214,7 +214,7 @@ as the name is changed.
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
 TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
 
-0. You just DO WHAT THE FUCK YOU WANT TO.\``;
+0. You just DO WHAT THE FUCK YOU WANT TO.`;
             break;
     }
     data.push(licenseBadge);

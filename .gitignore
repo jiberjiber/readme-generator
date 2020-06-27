@@ -105,3 +105,4 @@ dist
 
 # README output
 output/*
+!output/.gitkeep

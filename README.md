@@ -1,10 +1,11 @@
-#  
+# readme-generator 
 
- [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/) [![GitHub last commit](https://img.shields.io/github/last-commit//)](https://github.com///graphs/commit-activity) 
+ [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GitHub last commit](https://img.shields.io/github/last-commit/jiberjiber/readme-generator)](https://github.com/jiberjiber/readme-generator/graphs/commit-activity) 
 
  # Description 
- 
-Write a description of your program. Markdown is supported. 
+ Use the thing.
+
+And find out. 
 
  <details>
 <summary>TABLE OF CONTENTS</summary>
@@ -22,24 +23,38 @@ Write a description of your program. Markdown is supported.
 
  # Installation 
  To install this program, you have a couple options. 
-1. Install program using ``
+1. Install program using `npm install readme-gen-jib`
 2. Download the repo and use node to run the index.js file 
 
  # Usage 
- Write a brief set of instructions on how to use your program. Markdown is supported. 
+ 1. Run the thing
+2. Enter the info
+3. Find generated README.md in installation folder
+4. Profit??? 
 
  # License 
- DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-            Version 2, December 2004 
+ Copyright 2020 Evan Boswood
 
-Copyright (C) 2020  <> 
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+         
+                http://www.apache.org/licenses/LICENSE-2.0
+         
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License. 
 
-Everyone is permitted to copy and distribute verbatim or modified 
-copies of this license document, and changing it is allowed as long 
-as the name is changed. 
+ # Contributions 
+ I have no idea what is supposed to go here... Check [#questions](here)... 
 
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+ # Tests 
+ Run the thing. 
 
-0. You just DO WHAT THE FUCK YOU WANT TO. 
+ # Questions 
+ [http://www.github.com/jiberjiber](jiberjiber's GitHub profile)
+    
+    If you have any questions or want to say hi, you can contact me at evan@boswood.net 
 

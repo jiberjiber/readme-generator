@@ -94,6 +94,9 @@ inquirer.prompt([
 
 </p>
 </details>`;
+    const contactSection = `[http://www.github.com/${answers.userName}](${answers.userName}'s GitHub profile)
+    
+    If you have any questions or want to say hi, you can contact me at ${answers.email}`;
     const filename = "README.md";
     const newLine = "\n";
     const newLineBig = "\n\n";
@@ -125,7 +128,7 @@ inquirer.prompt([
 
         case 'GNU GPLv3':
             licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-            licenseNotice = `    This program is free software: you can redistribute it and/or modify
+            licenseNotice = `This program is free software: you can redistribute it and/or modify
             it under the terms of the GNU General Public License as published by
             the Free Software Foundation, either version 3 of the License, or
             (at your option) any later version.
@@ -258,7 +261,25 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
     data.push(`# License`);
     data.push(newLine);
     data.push(licenseNotice);
-    data.push(newLineBig)
+    data.push(newLineBig);
+
+    // Contributing instructions
+    data.push(`# Contributions`);
+    data.push(newLine);
+    data.push(answers.contribution);
+    data.push(newLineBig);
+
+    // Tests
+    data.push(`# Tests`);
+    data.push(newLine);
+    data.push(answers.test);
+    data.push(newLineBig);
+
+    // Contact
+    data.push(`# Questions`);
+    data.push(newLine);
+    data.push(contactSection);
+    data.push(newLineBig);
 
 
     fs.writeFile(filename, data.join(' '), function(err){

@@ -88,7 +88,7 @@ inquirer.prompt([
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
+- [Contributing](#contributions)
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -96,7 +96,7 @@ inquirer.prompt([
 </details>`;
     const contactSection = `[http://www.github.com/${answers.userName}](${answers.userName}'s GitHub profile)
     
-    If you have any questions or want to say hi, you can contact me at ${answers.email}`;
+If you have any questions or want to say hi, you can contact me at ${answers.email}`;
     const filename = "README.md";
     const newLine = "\n";
     const newLineBig = "\n\n";
@@ -151,7 +151,7 @@ inquirer.prompt([
 
         case "Apache License 2.0":
             licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-            licenseNotice = `Copyright 2020 ${answers.authorName}
+            licenseNotice = `    Copyright 2020 ${answers.authorName}
 
             Licensed under the Apache License, Version 2.0 (the "License");
             you may not use this file except in compliance with the License.

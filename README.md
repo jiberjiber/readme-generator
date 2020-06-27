@@ -1,11 +1,11 @@
 # readme-generator 
 
- [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GitHub last commit](https://img.shields.io/github/last-commit/jiberjiber/readme-generator)](https://github.com/jiberjiber/readme-generator/graphs/commit-activity) 
+ Version 1.0.0 
+
+ [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![GitHub last commit](https://img.shields.io/github/last-commit/jiberjiber/readme-generator)](https://github.com/jiberjiber/readme-generator/graphs/commit-activity) 
 
  # Description 
- Use the thing.
-
-And find out. 
+ This is a markdown readme generator written in NodeJS. 
 
  <details>
 <summary>TABLE OF CONTENTS</summary>
@@ -14,7 +14,7 @@ And find out.
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
+- [Contributing](#contributions)
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -27,34 +27,24 @@ And find out.
 2. Download the repo and use node to run the index.js file 
 
  # Usage 
- 1. Run the thing
-2. Enter the info
-3. Find generated README.md in installation folder
-4. Profit??? 
+ 1. Install the program following the instructions above.
+2. Run the program using ```node index.js``` from the installation directory.
+3. Input all required information.
+4. Find the generated file in the output folder within the installation directory. 
 
  # License 
- Copyright 2020 Evan Boswood
-
-            Licensed under the Apache License, Version 2.0 (the "License");
-            you may not use this file except in compliance with the License.
-            You may obtain a copy of the License at
-         
-                http://www.apache.org/licenses/LICENSE-2.0
-         
-            Unless required by applicable law or agreed to in writing, software
-            distributed under the License is distributed on an "AS IS" BASIS,
-            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-            See the License for the specific language governing permissions and
-            limitations under the License. 
+ This Source Code Form is subject to the terms of the Mozilla Public
+            License, v. 2.0. If a copy of the MPL was not distributed with this
+            file, You can obtain one at https://mozilla.org/MPL/2.0/. 
 
  # Contributions 
- I have no idea what is supposed to go here... Check [#questions](here)... 
+ To contribute to this project, please contact me [here](#questions). 
 
  # Tests 
- Run the thing. 
+ Test using the included jest files in the test directory. (You will need jest installed) 
 
  # Questions 
  [http://www.github.com/jiberjiber](jiberjiber's GitHub profile)
     
-    If you have any questions or want to say hi, you can contact me at evan@boswood.net 
+If you have any questions or want to say hi, you can contact me at evan@boswood.net 
 

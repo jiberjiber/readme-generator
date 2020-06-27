@@ -94,8 +94,8 @@ inquirer.prompt([
 
 </p>
 </details>`;
-    const contactSection = `[http://www.github.com/${answers.userName}](${answers.userName}'s GitHub profile)
-    
+    const contactSection = `[${answers.userName}'s GitHub profile](http://www.github.com/${answers.userName})
+
 If you have any questions or want to say hi, you can contact me at ${answers.email}`;
     const filename = "README.md";
     const newLine = "\n";
@@ -232,7 +232,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
     data.push(newLineBig);
 
     // Input description
-    data.push(`# Description`);
+    data.push(`## Description`);
     data.push(newLine);
     data.push(answers.description);
     data.push(newLineBig);
@@ -244,39 +244,39 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
 
     // Installation instructions
-    data.push(`# Installation`);
+    data.push(`## Installation`);
     data.push(newLine);
     data.push(`To install this program, you have a couple options. \n1. Install program using \`${answers.installation}\`\n2. Download the repo and use node to run the index.js file`);
     data.push(newLineBig);
 
     
     // Usage instructions
-    data.push(`# Usage`);
+    data.push(`## Usage`);
     data.push(newLine);
     data.push(answers.usage);
     data.push(newLineBig);
 
     
     // License notice
-    data.push(`# License`);
+    data.push(`## License`);
     data.push(newLine);
     data.push(licenseNotice);
     data.push(newLineBig);
 
     // Contributing instructions
-    data.push(`# Contributions`);
+    data.push(`## Contributions`);
     data.push(newLine);
     data.push(answers.contribution);
     data.push(newLineBig);
 
     // Tests
-    data.push(`# Tests`);
+    data.push(`## Tests`);
     data.push(newLine);
     data.push(answers.test);
     data.push(newLineBig);
 
     // Contact
-    data.push(`# Questions`);
+    data.push(`## Questions`);
     data.push(newLine);
     data.push(contactSection);
     data.push(newLineBig);

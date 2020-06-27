@@ -1,11 +1,9 @@
 # readme-generator 
 
- Version 0.0.1 
-
  [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/) [![GitHub last commit](https://img.shields.io/github/last-commit/jiberjiber/readme-generator)](https://github.com/jiberjiber/readme-generator/graphs/commit-activity) 
 
  # Description 
- This is a readme generator written in NodeJS. 
+ This is a readme generator written in NodeJS.
 
 Run it and find out. 
 
@@ -35,7 +33,7 @@ Run it and find out.
 4. Profit??? 
 
  # License 
-         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+ 'DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
             Version 2, December 2004 
 
 Copyright (C) 2020 Evan Boswood <evan@boswood.net> 
@@ -47,5 +45,5 @@ as the name is changed.
     DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
 TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
 
-0. You just DO WHAT THE FUCK YOU WANT TO. 
+0. You just DO WHAT THE FUCK YOU WANT TO.` 
 

@@ -2,22 +2,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 
-const tableOfContents = `
-<details>\n
-<summary>TABLE OF CONTENTS</summary>\n
-<p>\n\n
-
- - [Installation](#installation)\n
- - [Usage](#usage)\n
- - [License](#license)\n
- - [Contributing](#contributing)\n
- - [Tests](#tests)\n
- - [Questions](#questions)\n\n
-
-</p>\n
-</details>\n\n
-`;
-
 inquirer.prompt([
     {
         type: "input",
@@ -79,16 +63,49 @@ inquirer.prompt([
         type: "input",
         name: "email",
         message: "Author's e-Mail: "
+    },
+    {
+        type: "list",
+        name: "type",
+        message: "Is this a website?",
+        choices: [
+            "Yes",
+            "No"
+        ]
     }
 ])
 .then(answers => {
     // Required variables
+    const tableOfContents = `
+        <details>\n
+        <summary>TABLE OF CONTENTS</summary>\n
+        <p>\n\n
+
+        - [Installation](#installation)\n
+        - [Usage](#usage)\n
+        - [License](#license)\n
+        - [Contributing](#contributing)\n
+        - [Tests](#tests)\n
+        - [Questions](#questions)\n\n
+
+        </p>\n
+        </details>
+        `;
     const filename = "README.md";
+    const newLine = "\n";
+    const newLineBig = "\n\n";
     let data = [];
     let licenseBadge = "";
     
+    
     // Push project name
-    data.push(`#${answers.name}`);
+    data.push(`# ${answers.name}`);
+    data.push(newLineBig);
+
+    if(answers.version.length >= 1){
+        data.push(`Version ${answers.version}`);
+        data.push(newLineBig);
+    }
 
     switch(answers.license){
         case 'MIT':
@@ -132,9 +149,14 @@ inquirer.prompt([
     // Create status badges
     const webBadge = `[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/${answers.userName}.github.io/${answers.name}.svg)](http://${answers.userName}.github.io/${answers.name}/) `;
     const commitBadge = `[![GitHub last commit](https://img.shields.io/github/last-commit/${answers.userName}/${answers.name})](https://github.com/${answers.userName}/${answers.name}/graphs/commit-activity)`
+    if(answers.type === "Yes"){
+        data.push(webBadge);
+    }
+    data.push(commitBadge);
+    data.push(newLineBig);
 
 
-    fs.write(filename, JSON.stringify(data, null, '\t'), function(err){
+    fs.writeFile(filename, data.join(' '), function(err){
         if(err){
             console.log(err);
         }

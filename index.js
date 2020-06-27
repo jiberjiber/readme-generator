@@ -97,7 +97,7 @@ inquirer.prompt([
     const contactSection = `[${answers.userName}'s GitHub profile](http://www.github.com/${answers.userName})
 
 If you have any questions or want to say hi, you can contact me at ${answers.email}`;
-    const filename = "README.md";
+    const filename = "./output/README.md";
     const newLine = "\n";
     const newLineBig = "\n\n";
     let data = [];

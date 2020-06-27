@@ -1,0 +1,23 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "A NodeJS-based markup readme generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiberjiber/readme-generator.git"
+  },
+  "author": "Evan Boswood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiberjiber/readme-generator/issues"
+  },
+  "homepage": "https://github.com/jiberjiber/readme-generator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^7.2.0"
+  }
+}

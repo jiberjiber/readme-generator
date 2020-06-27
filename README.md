@@ -27,10 +27,12 @@
 2. Download the repo and use node to run the index.js file 
 
  ## Usage 
- 1. Install the program following the instructions above.
+1. Install the program following the instructions above.
 2. Run the program using ```node index.js``` from the installation directory.
 3. Input all required information.
-4. Find the generated file in the output folder within the installation directory. 
+4. Find the generated file in the output folder within the installation directory.
+
+[Video walkthrough](https://streamable.com/2ca6b6)
 
  ## License 
  Copyright 2020 Evan Boswood

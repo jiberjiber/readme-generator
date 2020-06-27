@@ -16,17 +16,19 @@ inquirer.prompt([
     {
         type: "editor",
         name: "description",
-        message: "Project description: "
+        message: "Project description: ",
+        default: "Write a description of your program. Markdown is supported."
     },
     {
         type: "input",
         name: "installation",
-        message: "Installation steps: "
+        message: "Installation command: "
     },
     {
-        type: "input",
+        type: "editor",
         name: "usage",
-        message: "Usage steps: "
+        message: "Usage steps: ",
+        default: "Write a brief set of instructions on how to use your program. Markdown is supported."
     },
     {
         type: "input",
@@ -76,8 +78,7 @@ inquirer.prompt([
 ])
 .then(answers => {
     // Required variables
-    const tableOfContents = `
-<details>
+    const tableOfContents = `<details>
 <summary>TABLE OF CONTENTS</summary>
 <p>
 
@@ -89,8 +90,7 @@ inquirer.prompt([
 - [Questions](#questions)
 
 </p>
-</details>
-`;
+</details>`;
     const filename = "README.md";
     const newLine = "\n";
     const newLineBig = "\n\n";
@@ -163,6 +163,18 @@ inquirer.prompt([
 
     // Input table of contents
     data.push(tableOfContents);
+    data.push(newLineBig);
+
+
+    // Installation instructions
+    data.push(`# Installation`);
+    data.push(`To install this program, you have a couple options. \n1. Install program using \`${answers.installation}\`\n2. Download the repo and use node to run the index.js file`);
+    data.push(newLineBig);
+
+    
+    // Usage instructions
+    data.push(`# Usage`);
+    data.push(answers.usage);
     data.push(newLineBig);
 
 

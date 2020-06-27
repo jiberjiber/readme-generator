@@ -27,13 +27,13 @@ Run it and find out.
 2. Download the repo and use node to run the index.js file 
 
  # Usage 
- 1. Run the program
-2. Answer the questions
-3. Find the generated README.md within the installation folder.
-4. Profit??? 
+ Run the program
+Answer the questions
+Find the generated README.md within the installation folder.
+Profit??? 
 
  # License 
- 'DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+ `DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
             Version 2, December 2004 
 
 Copyright (C) 2020 Evan Boswood <evan@boswood.net> 
@@ -42,7 +42,7 @@ Everyone is permitted to copy and distribute verbatim or modified
 copies of this license document, and changing it is allowed as long 
 as the name is changed. 
 
-    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
 TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
 
 0. You just DO WHAT THE FUCK YOU WANT TO.` 

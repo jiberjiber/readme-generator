@@ -1,16 +1,15 @@
-# 1 
+# readme-generator 
 
- [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GitHub last commit](https://img.shields.io/github/last-commit/jib/1)](https://github.com/jib/1/graphs/commit-activity) 
+ Version 0.0.1 
 
- # Description This is a test
-This is a new line
+ [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/) [![GitHub last commit](https://img.shields.io/github/last-commit/jiberjiber/readme-generator)](https://github.com/jiberjiber/readme-generator/graphs/commit-activity) 
 
-1. Step 1
-2. Step 2
-3. Step 3 
+ # Description 
+ This is a readme generator written in NodeJS. 
 
- 
-<details>
+Run it and find out. 
+
+ <details>
 <summary>TABLE OF CONTENTS</summary>
 <p>
 
@@ -22,6 +21,31 @@ This is a new line
 - [Questions](#questions)
 
 </p>
-</details>
- 
+</details> 
+
+ # Installation 
+ To install this program, you have a couple options. 
+1. Install program using `npm install readme-gen-jib`
+2. Download the repo and use node to run the index.js file 
+
+ # Usage 
+ 1. Run the program
+2. Answer the questions
+3. Find the generated README.md within the installation folder.
+4. Profit??? 
+
+ # License 
+         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+            Version 2, December 2004 
+
+Copyright (C) 2020 Evan Boswood <evan@boswood.net> 
+
+Everyone is permitted to copy and distribute verbatim or modified 
+copies of this license document, and changing it is allowed as long 
+as the name is changed. 
+
+    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+
+0. You just DO WHAT THE FUCK YOU WANT TO. 
 
